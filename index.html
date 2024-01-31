@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-Groceries</title>
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/carts.png" class="logo" />
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ourpackages">Our Packages</a></li>
+                <li><a href="#callus">Call Us</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="container">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="images/banner5.jpg" class="banner" />
+                    <div class="centered">
+                        <h1>TOP RATED E-GROCERIES SHOP IN<br> INDONESIAN</h1><br>Every Day With Best Ingredients
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/banner4.jpg" class="banner" />
+                    <div class="centered">
+                        <h1>TOP RATED E-GROCERIES SHOP IN<br> INDONESIAN</h1><br>Every Day With Best Ingredients
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/banner3.jpg" class="banner" />
+                    <div class="centered">
+                        <h1>TOP RATED E-GROCERIES SHOP IN<br> INDONESIAN</h1><br>Every Day With Best Ingredients
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <article id="ourpackages" class="card">
+                <img src="images/banner3.jpg" alt="sejarah" class="featured-image" />
+                <p>
+                    <cite>"setiap hari beli sayur disini"</cite>
+                </p>
+                <div class="komentar">
+                    <table>
+                        <tr>
+                            <td rowspan="3"><img src="images/user.png" alt="user" class="user"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Florence Hughes</b><br /><i>Ibu Rumah Tangga, 28</i>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <hr>
+                    <br />
+                    <b>
+                        Use this space to provide users with more information about your offer. Consider it follow-up to your headline and explain
+                        the benefits of your service or product
+                    </b>
+                    <br />
+                    <ol>
+                        <li> Your first feature, written in the form of a benefit statement.</li>
+                        <li> Your second feature, written in the form of a benefit statement.</li>
+                        <li> our third feature, written in the form of a benefit statement.</li>
+                      </ol>
+                </div>
+            </article>
+        </div>
+        <aside id="callus">
+            <article class="profile card">
+                <form id="contactform" onsubmit="return validateForm()">
+                    <fieldset>
+                    <legend><h2>Contact Us</h2></legend>
+                    Sales akan menghubungi anda 1x24 jam setelah data kami terima
+                    <p><br>
+                        <label>Your Name :</label> <br/>
+                        <input type="text" id="name" name="name" placeholder="First and Last Name" />
+                    </p>
+                    <p>
+                        <label>Email Address :</label> <br/>
+                        <input type="email" id="email" name="name" placeholder="example@gmail.com" />
+                    </p>
+                    <p>
+                        <label>What are you interested in :</label> <br/>
+                        <select id="categories">
+                            <option value="">--Please choose an option--</option>
+                            <option value="fruit">Fruit</option>
+                            <option value="Vegetables">Vegetables</option>
+                            <option value="food">Frozen Food</option>
+                          </select>
+                    </p>
+                    <br/>
+                    <input class="submit" type="submit" value="SEND">
+                    </fieldset>
+                </form>
+            </article>
+        </aside>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
